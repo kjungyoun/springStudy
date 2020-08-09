@@ -50,7 +50,7 @@ public class Controller {
         member.setName(form.getName());
         service.join(member);
 
-        return "redirect:/"; // 루트페이지로 다시 이동시켜줌
+        return "redirect:/"; // 루트페이지로 다시 이동시켜줌 즉, static에서 생성한 index 페이지를 보여줌
     }
     @GetMapping("/list")
     public String list(Model model){
