@@ -3,9 +3,11 @@ package com.example.springStudy2.service;
 import com.example.springStudy2.domain.Member;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class ServiceTest {
-    Service service = new Service();
+    @Autowired
+    private Service service;
 
     @Test
     void shouldThrowException(){
