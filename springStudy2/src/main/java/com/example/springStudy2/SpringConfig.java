@@ -1,5 +1,6 @@
 package com.example.springStudy2;
 
+import com.example.springStudy2.aop.TimeTraceAop;
 import com.example.springStudy2.controller.Controller;
 import com.example.springStudy2.repository.JdbcRepository;
 import com.example.springStudy2.repository.JpaNewRepository;

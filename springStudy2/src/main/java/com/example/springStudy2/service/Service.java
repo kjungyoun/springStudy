@@ -24,7 +24,6 @@ public class Service {
 
     @Transactional // db의 조작에 문제가 생기면 rollback 아니면 커밋을 해주는 애너테이션
     public Long join(Member member){
-
         validate(member); //ifPresent는 if문과 동일하게 동작하므로 true일 경우 내부가 동작한다.
         repository.save(member);
 
@@ -33,6 +32,7 @@ public class Service {
         //입금
 
         return member.getId();
+
     }
 
     private void validate(Member member) {
