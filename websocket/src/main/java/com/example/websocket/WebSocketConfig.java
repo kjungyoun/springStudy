@@ -21,4 +21,4 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer { //ctr
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("gs-guide-websocket").withSockJS(); //websocket을 사용할 수 없을때 withSockJS를 이용해서 대체할 수 있도록 하는 것
     }
-}
+} // git 연동 테스트입니다.
